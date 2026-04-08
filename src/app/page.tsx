@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Hero } from '@/components/Hero'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
@@ -38,36 +39,8 @@ const featuredWork = [
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/40 z-10" />
-        <Image
-          src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1920&q=80"
-          alt="Hero background"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
-          <Badge variant="outline" className="mb-6 text-white border-white">
-            Available for Commission
-          </Badge>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-balance">
-            Capturing Moments That Matter
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Professional photography services specializing in portraits, landscapes, and editorial work
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
-              <Link href="/portfolio">View Portfolio</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-black" asChild>
-              <Link href="/contact">Get in Touch</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* Immersive Hero Section */}
+      <Hero />
 
       {/* Featured Work */}
       <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
