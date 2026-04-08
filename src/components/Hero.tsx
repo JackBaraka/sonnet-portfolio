@@ -55,7 +55,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight"
           >
-            Alex <span className="italic font-light">Morgan</span>
+            SONNET <span className="italic font-light">VISUALS</span>
           </motion.h1>
 
           {/* Subtitle */}
